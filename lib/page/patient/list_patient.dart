@@ -56,7 +56,7 @@ class _ListPasienState extends State<ListPasien> {
                                 _isLoading = true;
                               });
 
-                              await _downloadData(value.listAllPatient);
+                              // await _downloadData(value.listAllPatient);
 
                               setState(() {
                                 _isLoading = false;

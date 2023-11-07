@@ -31,7 +31,7 @@ class _LandingPageState extends State<LandingPage> {
           children: [
             const SizedBox(height: 4.0),
             Image.asset(
-              "assets/landing.png",
+              "assets/login.png",
               fit: BoxFit.cover,
               height: 250,
             ),
@@ -95,7 +95,7 @@ class _LandingPageState extends State<LandingPage> {
                                           (states) => Colors.white),
                                 ),
                                 Text(
-                                  'Hire a Professional',
+                                  'Patient',
                                   style:
                                   TextStyle(fontSize: 12, color: Colors.white),
                                 ),
@@ -113,30 +113,30 @@ class _LandingPageState extends State<LandingPage> {
                                           (states) => Colors.white),
                                 ),
                                 Text(
-                                  'Offer my Services',
+                                  'Doctor',
                                   style:
                                   TextStyle(fontSize: 12, color: Colors.white),
                                 ),
                               ],
                             ),
-                            Row(
-                              children: [
-                                Radio(
-                                  value: 3,
-                                  groupValue: _isDokter,
-                                  onChanged: (dynamic value) => setState(() {
-                                    _isDokter = value;
-                                  }),
-                                  fillColor: MaterialStateColor.resolveWith(
-                                          (states) => Colors.white),
-                                ),
-                                Text(
-                                  'Admin',
-                                  style:
-                                  TextStyle(fontSize: 12, color: Colors.white),
-                                ),
-                              ],
-                            )
+                            // Row(
+                            //   children: [
+                            //     Radio(
+                            //       value: 3,
+                            //       groupValue: _isDokter,
+                            //       onChanged: (dynamic value) => setState(() {
+                            //         _isDokter = value;
+                            //       }),
+                            //       fillColor: MaterialStateColor.resolveWith(
+                            //               (states) => Colors.white),
+                            //     ),
+                            //     Text(
+                            //       'Admin',
+                            //       style:
+                            //       TextStyle(fontSize: 12, color: Colors.white),
+                            //     ),
+                            //   ],
+                            // )
                           ],
                         ),
                         SizedBox(height: 40),

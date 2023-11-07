@@ -74,9 +74,9 @@ class _ListDoctorTransactionState extends State<ListDoctorTransaction> {
                 .length;
 
             // Get all success transaction
-            successList = value.listTransaction
-                .where((element) => element.status == 'Success')
-                .toList();
+            // successList = value.listTransaction
+            //     .where((element) => element.status == 'Success')
+            //     .toList();
 
             // Calculating earning from success transaction
             successList
@@ -105,13 +105,13 @@ class _ListDoctorTransactionState extends State<ListDoctorTransaction> {
                                   _isLoading = true;
                                 });
 
-                                await _downloadData(
-                                  value.listTransaction,
-                                  success,
-                                  failed,
-                                  pending,
-                                  earning,
-                                );
+                                // await _downloadData(
+                                //   value.listTransaction,
+                                //   success,
+                                //   failed,
+                                //   pending,
+                                //   earning,
+                                // );
 
                                 setState(() {
                                   _isLoading = false;

@@ -76,7 +76,8 @@ class _ListDiagnosisUserState extends State<ListDiagnosisUser> {
                 Expanded(
                   flex: 2,
                   child: Text(
-                    "Service Provider : ${item.queueData!.transactionData!.doctorProfile!.name}",
+                    "Service Provider : ${item.diagnosis}",
+                    // "Service Provider : ${item.queueData!.transactionData!.doctorProfile!.name}",
                     style: TextStyle(fontSize: 14, fontWeight: FontWeight.w800),
                   ),
                 ),
@@ -98,9 +99,9 @@ class _ListDiagnosisUserState extends State<ListDiagnosisUser> {
                 Text(
                   "Profession : ",
                 ),
-                Text(
-                  "${item.queueData!.transactionData!.doctorProfile!.specialist}",
-                ),
+                // Text(
+                //   "${item.queueData!.transactionData!.doctorProfile!.specialist}",
+                // ),
               ],
             ),
             Row(
@@ -109,12 +110,12 @@ class _ListDiagnosisUserState extends State<ListDiagnosisUser> {
                 Text(
                   "Consultation Time : ",
                 ),
-                Text(
-                  "${item.queueData!.transactionData!.consultationSchedule!.startAt!.format(context)} - ${item.queueData!.transactionData!.consultationSchedule!.endAt!.format(context)}",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
+                // Text(
+                //   "${item.queueData..format(context)} - ${item.queueData!.transactionData!.consultationSchedule!.endAt!.format(context)}",
+                //   style: TextStyle(
+                //     fontWeight: FontWeight.bold,
+                //   ),
+                // ),
               ],
             ),
             Row(

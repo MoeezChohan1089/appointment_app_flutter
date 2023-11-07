@@ -1,8 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:json_annotation/json_annotation.dart';
-import 'package:telekonsul/models/consultation_schedule/consultation_schedule.dart';
-import 'package:telekonsul/models/doctor/doctor.dart';
-import 'package:telekonsul/models/user/user.dart';
+
+import '../consultation_schedule/consultation_schedule.dart';
+import '../doctor/doctor.dart';
+import '../user/user.dart';
 
 part 'transaction_model.g.dart';
 

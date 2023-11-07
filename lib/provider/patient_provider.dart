@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:telekonsul/models/user/user.dart';
+
+import '../models/user/user.dart';
 
 class PatientProvider with ChangeNotifier {
   bool _isLoading = false;

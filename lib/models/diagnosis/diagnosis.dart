@@ -1,6 +1,6 @@
+import 'package:appointment_app/models/queue/queue.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:json_annotation/json_annotation.dart';
-import 'package:telekonsul/models/queue/queue.dart';
 
 part 'diagnosis.g.dart';
 

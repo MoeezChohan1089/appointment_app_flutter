@@ -1,8 +1,8 @@
+import 'package:appointment_app/provider/diagnosis_provider.dart';
+import 'package:appointment_app/provider/transaction_provider.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:telekonsul/provider/diagnosis_provider.dart';
-import 'package:telekonsul/provider/transaction_provider.dart';
 import 'page/pages.dart';
 import 'provider/consultation_schedule_provider.dart';
 import 'provider/patient_provider.dart';

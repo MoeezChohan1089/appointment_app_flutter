@@ -1,6 +1,8 @@
 import 'dart:async';
 import 'dart:io';
 
+import 'package:appointment_app/models/diagnosis/diagnosis.dart';
+import 'package:appointment_app/page/transaction/payment_source.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -16,30 +18,29 @@ import 'package:intl/intl.dart';
 import 'package:open_file/open_file.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:provider/provider.dart';
-import 'package:telekonsul/models/queue/queue.dart';
-import 'package:telekonsul/models/diagnosis/diagnosis.dart';
-import 'package:telekonsul/models/doctor/doctor.dart';
-import 'package:telekonsul/models/consultation_schedule/consultation_schedule.dart';
-import 'package:telekonsul/models/transaction/transaction_model.dart';
-import 'package:telekonsul/models/user/user.dart';
-import 'package:telekonsul/page/transaction/payment_source.dart';
-import 'package:telekonsul/provider/queue_provider.dart';
-import 'package:telekonsul/provider/diagnosis_provider.dart';
-import 'package:telekonsul/provider/doctor_provider.dart';
-import 'package:telekonsul/provider/consultation_schedule_provider.dart';
-import 'package:telekonsul/provider/patient_provider.dart';
-import 'package:telekonsul/provider/transaction_provider.dart';
-import 'package:telekonsul/provider/user_provider.dart';
-import 'package:telekonsul/utils/app_theme.dart';
-import 'package:telekonsul/utils/numeric_text_formatter.dart';
-import 'package:telekonsul/utils/status_text.dart';
 import 'package:location/location.dart' as loc;
 import 'package:geocode/geocode.dart';
 
 import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;
-import 'package:telekonsul/utils/toolbar.dart';
 import 'package:url_launcher/url_launcher.dart';
+
+import '../models/consultation_schedule/consultation_schedule.dart';
+import '../models/doctor/doctor.dart';
+import '../models/queue/queue.dart';
+import '../models/transaction/transaction_model.dart';
+import '../models/user/user.dart';
+import '../provider/consultation_schedule_provider.dart';
+import '../provider/diagnosis_provider.dart';
+import '../provider/doctor_provider.dart';
+import '../provider/patient_provider.dart';
+import '../provider/queue_provider.dart';
+import '../provider/transaction_provider.dart';
+import '../provider/user_provider.dart';
+import '../utils/app_theme.dart';
+import '../utils/numeric_text_formatter.dart';
+import '../utils/status_text.dart';
+import '../utils/toolbar.dart';
 
 part 'auth/login.dart';
 part 'auth/register.dart';

@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:razorpay_flutter/razorpay_flutter.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:telekonsul/provider/doctor_provider.dart';
-import 'package:telekonsul/provider/patient_provider.dart';
-import 'package:telekonsul/utils/app_theme.dart';
+
+import '../../provider/doctor_provider.dart';
+import '../../provider/patient_provider.dart';
+import '../../utils/app_theme.dart';
 
 class Payment extends StatefulWidget {
   @override
@@ -95,8 +96,10 @@ class _PaymentState extends State<Payment> {
               ),
             ),
             SizedBox(height: 12,),
-            RaisedButton(
-              color: AppTheme.dangerColor,
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: AppTheme.dangerColor, // Background color
+              ),
               child: Text("Donate Now", style: TextStyle(
                   color: Colors.white
               ),),

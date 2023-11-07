@@ -1,7 +1,7 @@
+import 'package:appointment_app/models/queue/queue.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:telekonsul/models/queue/queue.dart';
 
 class QueueProvider with ChangeNotifier {
   bool _isLoading = false;

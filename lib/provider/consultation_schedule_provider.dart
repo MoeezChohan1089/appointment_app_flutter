@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:telekonsul/models/consultation_schedule/consultation_schedule.dart';
+
+import '../models/consultation_schedule/consultation_schedule.dart';
 
 class ConsultationScheduleProvider with ChangeNotifier {
   bool _isLoading = false;

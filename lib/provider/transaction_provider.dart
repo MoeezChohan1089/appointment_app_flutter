@@ -1,7 +1,8 @@
+import 'package:appointment_app/provider/patient_provider.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:telekonsul/models/transaction/transaction_model.dart';
-import 'package:telekonsul/provider/patient_provider.dart';
+
+import '../models/transaction/transaction_model.dart';
 
 class TransactionProvider with ChangeNotifier {
   bool _isLoading = false;

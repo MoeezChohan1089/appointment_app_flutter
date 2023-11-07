@@ -224,7 +224,7 @@ class _DoctorProfileState extends State<DoctorProfile> {
   }
 
   _pickImage(Doctor? dokter, ImageSource imgSource) async {
-    final pickedImage = await ImagePicker().getImage(source: imgSource);
+    final pickedImage = await ImagePicker().pickImage(source: imgSource);
 
     imageFile = pickedImage != null ? File(pickedImage.path) : null;
 
@@ -236,7 +236,7 @@ class _DoctorProfileState extends State<DoctorProfile> {
   }
 
   _cropImage() async {
-    File? croppedFile = await ImageCropper.cropImage(
+    final croppedFile = await ImageCropper().cropImage(
         sourcePath: imageFile!.path,
         aspectRatioPresets: Platform.isAndroid
             ? [
@@ -256,18 +256,21 @@ class _DoctorProfileState extends State<DoctorProfile> {
                 CropAspectRatioPreset.ratio7x5,
                 CropAspectRatioPreset.ratio16x9
               ],
-        androidUiSettings: AndroidUiSettings(
-            toolbarTitle: 'Cropper',
-            toolbarColor: Colors.deepOrange,
-            toolbarWidgetColor: Colors.white,
-            initAspectRatio: CropAspectRatioPreset.original,
-            lockAspectRatio: false),
-        iosUiSettings: IOSUiSettings(
-          title: 'Cropper',
-        ));
+        uiSettings: [
+          AndroidUiSettings(
+              toolbarTitle: 'Cropper',
+              toolbarColor: Colors.deepOrange,
+              toolbarWidgetColor: Colors.white,
+              initAspectRatio: CropAspectRatioPreset.original,
+              lockAspectRatio: false),
+          IOSUiSettings(
+            title: 'Cropper',
+          )
+        ],
+    );
     if (croppedFile != null) {
       setState(() {
-        imageFile = croppedFile;
+        imageFile = File(croppedFile.path);
       });
     }
   }

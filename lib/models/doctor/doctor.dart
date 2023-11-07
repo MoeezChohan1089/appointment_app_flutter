@@ -1,6 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:telekonsul/models/consultation_schedule/consultation_schedule.dart';
-import 'package:telekonsul/models/transaction/transaction_model.dart';
+
+import '../consultation_schedule/consultation_schedule.dart';
 
 part 'doctor.g.dart';
 

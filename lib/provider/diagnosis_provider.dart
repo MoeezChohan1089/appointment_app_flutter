@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:telekonsul/models/diagnosis/diagnosis.dart';
+
+import '../models/diagnosis/diagnosis.dart';
 
 class DiagnosisProvider with ChangeNotifier {
   bool _isLoading = false;

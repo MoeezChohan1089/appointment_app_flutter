@@ -1,11 +1,10 @@
+import 'package:appointment_app/provider/patient_provider.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:telekonsul/models/admin/admin.dart';
-import 'package:telekonsul/models/doctor/doctor.dart';
-import 'package:telekonsul/models/user/user.dart';
-import 'package:telekonsul/provider/patient_provider.dart';
 
+import '../models/admin/admin.dart';
+import '../models/doctor/doctor.dart';
 import 'doctor_provider.dart';
 
 class AdminProvider with ChangeNotifier {

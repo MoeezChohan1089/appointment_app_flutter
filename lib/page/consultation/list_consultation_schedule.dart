@@ -59,8 +59,8 @@ class _ListConsultationScheduleState extends State<ListConsultationSchedule> {
                               _isLoading = true;
                             });
 
-                            await _downloadData(
-                                context, value.listConsultationSchedule);
+                            // await _downloadData(
+                            //     context, value.listConsultationSchedule);
 
                             setState(() {
                               _isLoading = false;

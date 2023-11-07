@@ -1,9 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:telekonsul/models/queue/queue.dart';
-import 'package:telekonsul/models/doctor/doctor.dart';
-import 'package:telekonsul/models/consultation_schedule/consultation_schedule.dart';
-import 'package:telekonsul/models/transaction/transaction_model.dart';
+
+import '../models/consultation_schedule/consultation_schedule.dart';
+import '../models/doctor/doctor.dart';
+import '../models/queue/queue.dart';
 
 class DoctorProvider with ChangeNotifier {
   bool _isLoading = false;

@@ -1,10 +1,10 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:telekonsul/models/doctor/doctor.dart';
-import 'package:telekonsul/models/user/user.dart';
-import 'package:telekonsul/provider/admin_provider.dart';
 
+import '../models/doctor/doctor.dart';
+import '../models/user/user.dart';
+import 'admin_provider.dart';
 import 'doctor_provider.dart';
 
 class UserProvider with ChangeNotifier {
