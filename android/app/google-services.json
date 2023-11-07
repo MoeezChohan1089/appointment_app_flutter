@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "758682701882",
+    "project_id": "servicesapp-77b22",
+    "storage_bucket": "servicesapp-77b22.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:758682701882:android:4e9595af405c90ad2aa503",
+        "android_client_info": {
+          "package_name": "com.example.telekonsul"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "758682701882-5ujc4mo5g3hsoopvu3vts5sbnu2hcku0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4vu1IPNBpNoRUz6Yqa9LNqHk0kwf2tO4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "758682701882-5ujc4mo5g3hsoopvu3vts5sbnu2hcku0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
